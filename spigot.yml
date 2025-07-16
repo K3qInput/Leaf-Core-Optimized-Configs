@@ -1,0 +1,182 @@
+# This is the main configuration file for Spigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# For a reference for any variable inside this file, check out the Spigot wiki at
+# http://www.spigotmc.org/wiki/spigot-configuration/
+#
+# If you need help with the configuration or have any questions related to Spigot,
+# join us at the Discord or drop by our forums and leave a post.
+#
+# Discord: https://www.spigotmc.org/go/discord
+# Forums: http://www.spigotmc.org/
+
+settings:
+  bungeecord: false
+  player-shuffle: 0
+  user-cache-size: 500
+  moved-wrongly-threshold: 0.1
+  moved-too-quickly-multiplier: 20.0
+  timeout-time: 20
+  restart-on-crash: true
+  restart-script: ./start.sh
+  netty-threads: 4
+  attribute:
+    maxAbsorption:
+      max: 64.0
+    maxHealth:
+      max: 512.0
+    movementSpeed:
+      max: 1.0
+    attackDamage:
+      max: 2048.0
+  log-villager-deaths: false
+  log-named-deaths: false
+  save-user-cache-on-stop-only: true
+  sample-count: 12
+  debug: false
+messages:
+  whitelist: You are not whitelisted on this server!
+  unknown-command: Unknown command. Type "/help" for help.
+  server-full: The server is full!
+  outdated-client: Outdated client! Please use {0}
+  outdated-server: Outdated server! I'm still on {0}
+  restart: Server is restarting
+advancements:
+  disable-saving: false
+  disabled:
+  - minecraft:story/disabled
+players:
+  disable-saving: false
+world-settings:
+  default:
+    below-zero-generation-in-existing-chunks: false
+    view-distance: 6
+    simulation-distance: 4
+    thunder-chance: 100000
+    merge-radius:
+      item: 2.5
+      exp: 3.5
+    mob-spawn-range: 4
+    item-despawn-rate: 4000
+    arrow-despawn-rate: 600
+    trident-despawn-rate: 600
+    zombie-aggressive-towards-villager: true
+    nerf-spawner-mobs: true
+    enable-zombie-pigmen-portal-spawns: false
+    wither-spawn-sound-radius: 0
+    end-portal-sound-radius: 0
+    hanging-tick-frequency: 200
+    unload-frozen-chunks: true
+    growth:
+      cactus-modifier: 50
+      cane-modifier: 50
+      melon-modifier: 50
+      mushroom-modifier: 50
+      pumpkin-modifier: 50
+      sapling-modifier: 50
+      beetroot-modifier: 50
+      carrot-modifier: 50
+      potato-modifier: 50
+      torchflower-modifier: 50
+      wheat-modifier: 50
+      netherwart-modifier: 50
+      vine-modifier: 50
+      cocoa-modifier: 50
+      bamboo-modifier: 50
+      sweetberry-modifier: 50
+      kelp-modifier: 50
+      twistingvines-modifier: 50
+      weepingvines-modifier: 50
+      cavevines-modifier: 50
+      glowberry-modifier: 50
+      pitcherplant-modifier: 50
+    entity-activation-range:
+      animals: 16
+      monsters: 16
+      raiders: 32
+      misc: 8
+      water: 8
+      villagers: 16
+      flying-monsters: 16
+      wake-up-inactive:
+        animals-max-per-tick: 2
+        animals-every: 1600
+        animals-for: 60
+        monsters-max-per-tick: 4
+        monsters-every: 600
+        monsters-for: 60
+        villagers-max-per-tick: 2
+        villagers-every: 800
+        villagers-for: 60
+        flying-monsters-max-per-tick: 4
+        flying-monsters-every: 400
+        flying-monsters-for: 60
+      villagers-work-immunity-after: 80
+      villagers-work-immunity-for: 10
+      villagers-active-for-panic: false
+      tick-inactive-villagers: false
+      ignore-spectators: true
+    entity-tracking-range:
+      players: 32
+      animals: 32
+      monsters: 32
+      misc: 32
+      display: 32
+      other: 32
+    ticks-per:
+      hopper-transfer: 12
+      hopper-check: 8
+    hopper-amount: 1
+    hopper-can-load-chunks: false
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-desert: 14357617
+    seed-igloo: 14357618
+    seed-jungle: 14357619
+    seed-swamp: 14357620
+    seed-monument: 10387313
+    seed-shipwreck: 165745295
+    seed-ocean: 14357621
+    seed-outpost: 165745296
+    seed-endcity: 10387313
+    seed-slime: 987234911
+    seed-nether: 30084232
+    seed-mansion: 10387319
+    seed-fossil: 14357921
+    seed-portal: 34222645
+    seed-ancientcity: 20083232
+    seed-trailruins: 83469867
+    seed-trialchambers: 94251327
+    seed-buriedtreasure: 10387320
+    seed-mineshaft: default
+    seed-stronghold: default
+    hunger:
+      jump-walk-exhaustion: 0.03
+      jump-sprint-exhaustion: 0.1
+      combat-exhaustion: 0.05
+      regen-exhaustion: 4.0
+      swim-multiplier: 0.005
+      sprint-multiplier: 0.05
+      other-multiplier: 0.0
+    max-tnt-per-tick: 50
+    max-tick-time:
+      tile: 30
+      entity: 30
+    verbose: false
+config-version: 12
+commands:
+  tab-complete: 0
+  send-namespaced: true
+  log: false
+  spam-exclusions:
+  - /skill
+  silent-commandblock-console: true
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+  enable-spam-exclusions: true
+stats:
+  disable-saving: true
+  forced-stats: {}
