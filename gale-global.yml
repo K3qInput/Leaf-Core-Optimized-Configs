@@ -38,7 +38,7 @@ misc:
   last-tick-time-in-tps-command:
     add-oversleep: false
     enabled: false
-  premium-account-slow-login-timeout: 1
+  premium-account-slow-login-timeout: 1000
   verify-chat-order: true
 small-optimizations:
   reduced-intervals:
